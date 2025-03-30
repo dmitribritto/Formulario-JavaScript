@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autentica Formulário</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário</h1>
+        <form action="fonr-autentica">
+            <label for="usuario">Usuário:</label>
+            <input type="text" name="user" id="usuario" placeholder="insira seu usuario:" required> <!-- required = campo de preechimento obrigatório-->
+            <br><br>
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" placeholder="insira sua senha" required> <br><br>
+
+            <button type="button" onclick="autenticar()">ENTRAR</button>
+
+        </form>
+        <p id="mensagem"></p>
+    </div>
+</body>
+</html>
